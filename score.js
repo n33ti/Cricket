@@ -22,7 +22,7 @@ var myFunction = function () {
                 disbtn1()
                 undisbtn2()
                 timer = 0;
-                ball = 61
+                ball = 60;
             }
             else {
                 showRes()

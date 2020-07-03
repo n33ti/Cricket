@@ -37,7 +37,7 @@ var myFunction = function () {
 var updateTotalscore = function () {
     if (scoreRow > maxScore) {
         maxScore = scoreRow;
-        player = "Player " + (ball % 6 + 1).toString();
+        player = "Player " + (ball / 6 + 1).toString();
     }
     document.getElementById(nextRow.toString()).innerHTML = scoreRow.toString();
     scoreRow = 0;
@@ -52,8 +52,13 @@ var generateResults = function () {
         res = "Team B";
     else
         res = "None";
-    document.getElementById("Results").innerHTML = "Match Won By " + res;
-    document.getElementById("Man").innerHTML = "Man of the Match : " + player + "\nScore : " + maxScore.toString();
+        var team
+        if(ball>60)
+        team = "Team B"
+        else
+        team = "Team A"
+       document.getElementById("Results").innerHTML = "Match Won By " + res;
+       document.getElementById("Man").innerHTML = "Man of the Match : " + player + "\nScore : " + maxScore.toString() + " Of " + team; 
 };
 var setScore = function (id) {
     ball++;

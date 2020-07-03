@@ -26,7 +26,7 @@ const myFunction =function ()
            disbtn1()
            undistbtn2()
             timer = 0;
-                ball = 61
+                ball = 60
             }
             else{
             showRes()

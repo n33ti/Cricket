@@ -1,0 +1,602 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+   <script src="score.js"></script>
+        <script>
+            function check()
+            {
+            if(show1)
+            {
+            document.getElementById("btn1").disabled = true;
+            document.getElementById("btn2").disabled = false;
+            }
+            else
+            document.getElementById("btn2").disabled = true;
+            console.log("here")
+  
+
+            }
+            function disbtn1()
+            {
+                document.getElementById("btn1").disabled = true;
+            }
+            function disbtn2()
+            {
+                document.getElementById("btn2").disabled = true;
+
+            }
+         
+            function showRes()
+            {
+                document.getElementById("res").disabled = false;
+            }
+        </script>
+        
+    </head>
+<body onload="myFunction()">
+   <h1>
+       Cricket 10
+   </h1>
+    <div class="row">
+        <div class="column5" style=" margin-left: 30px;">
+            <button type="button"  onclick="setScore('a')" id="btn1"  class ="btn btn-primary"> Hit </button>
+      
+        </input>
+         <p>total :</p>
+                <p id ="a">
+               
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Team A
+                            </th>
+                            <th>
+                                b1
+                            </th>
+                            <th>
+                                b2
+                            </th>
+                          
+                            <th>
+                                b3
+                            </th>
+                            <th>
+                                b4
+                            </th>
+                            <th>
+                                b5
+                            </th>
+                            <th>
+                                b6
+                            </th>
+                            <th>
+                                Total
+                            </th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td> Player 1 </td>
+                        <td id ="1">
+
+                        </td>
+                        <td id = "2">
+
+                        </td>
+                        <td id = "3">
+
+                        </td>
+                        <td id ="4">
+
+                        </td>
+                        <td id = "5">
+
+                        </td>
+                        <td id = "6">
+
+                        </td>
+                        <td id = "501"></td>
+                        
+
+                    <tr>
+                        <td> Player 2 </td>
+                        <td id ="7">
+
+                        </td>
+                        <td id = "8">
+
+                        </td>
+                        <td id = "9">
+
+                        </td>
+                        <td id ="10">
+
+                        </td>
+                        <td id = "11">
+
+                        </td>
+                        <td id = "12">
+
+                        </td>
+                        <td id = "502">
+
+                        </td>
+               
+                    </tr>
+
+                    <tr>
+                        <td> Player 3 </td>
+                        <td id ="13">
+
+                        </td>
+                        <td id = "14">
+
+                        </td>
+                        <td id = "15">
+
+                        </td>
+                        <td id ="16">
+
+                        </td>
+                        <td id = "17">
+
+                        </td>
+                        <td id = "18"></td>
+                        <td id = "503"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td> Player 4 </td>
+                        <td id ="19">
+
+                        </td>
+                        <td id = "20">
+
+                        </td>
+                        <td id = "21">
+
+                        </td>
+                        <td id ="22">
+
+                        </td>
+                        <td id = "23">
+
+                        </td>
+                        <td id = "24"> </td>
+
+                        <td id = "504">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Player 5 </td>
+                        <td id ="25">
+
+                        </td>
+                        <td id = "26">
+
+                        </td>
+                        <td id = "27">
+
+                        </td>
+                        <td id ="28">
+
+                        </td>
+                        <td id = "29">
+
+                        </td>
+                        <td id = "30"> </td>
+                        <td id ="505"></td>
+
+
+                    </tr>
+                    <tr>
+                        <td> Player 6 </td>
+                        <td id ="31">
+
+                        </td>
+                        <td id = "32">
+
+                        </td>
+                        <td id = "33">
+
+                        </td>
+                        <td id ="34">
+
+                        </td>
+                        <td id = "35">
+
+                        </td>
+                        <td id = "36">
+
+                        </td>
+                        <td id = "506"></td>
+                        
+
+                    <tr>
+                        <td> Player 7 </td>
+                        <td id ="37">
+
+                        </td>
+                        <td id = "38">
+
+                        </td>
+                        <td id = "39">
+
+                        </td>
+                        <td id ="40">
+
+                        </td>
+                        <td id = "41">
+
+                        </td>
+                        <td id = "42">
+
+                        </td>
+                        <td id = "507">
+
+                        </td>
+               
+                    </tr>
+
+                    <tr>
+                        <td> Player 8 </td>
+                        <td id ="43">
+
+                        </td>
+                        <td id = "44">
+
+                        </td>
+                        <td id = "45">
+
+                        </td>
+                        <td id ="46">
+
+                        </td>
+                        <td id = "47">
+
+                        </td>
+                        <td id = "48"></td>
+                        <td id = "508"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td> Player 9 </td>
+                        <td id ="49">
+
+                        </td>
+                        <td id = "50">
+
+                        </td>
+                        <td id = "51">
+
+                        </td>
+                        <td id ="52">
+
+                        </td>
+                        <td id = "53">
+
+                        </td>
+                        <td id = "54"> </td>
+
+                        <td id = "509">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Player 10 </td>
+                        <td id ="55">
+
+                        </td>
+                        <td id = "56">
+
+                        </td>
+                        <td id = "57">
+
+                        </td>
+                        <td id ="58">
+
+                        </td>
+                        <td id = "59">
+
+                        </td>
+                        <td id = "60"> </td>
+                        <td id ="510"></td>
+
+
+                    </tr>
+
+
+                </table>
+            
+
+        </div>
+        <div class="column5">
+        <p>
+            <h2>
+                Timer : <p id="timer"></p>
+            </h2>
+            <h2>
+                Results
+            </h2>
+           
+            </p>
+            <button onclick="generateResults()" id = "res" disabled class ="btn btn-primary"> 
+                Generate Result
+            </button>
+            <h3 id="Results">
+
+            </h3>
+            <h3 id="Man"> 
+
+            </h3>
+        </div>
+        <div class="column5">
+            <input type="button" id ="btn2" value="Hit" disabled onclick="setScore('b')" class ="btn btn-primary">
+               
+                </button>
+<p>
+    total:
+</p>
+                <p id ="b">
+                
+                   </p>
+                   <table>
+                    <thead>
+                        <tr>
+                            <th>Team B</th>
+                            <th>
+                                b1
+                            </th>
+                           
+                            <th>
+                                b2
+                            </th>
+                            <th>
+                                b3
+                            </th>
+                            <th>
+                                b4
+                            </th>
+                            <th>
+                                b5
+                            </th>
+                            <th>
+                                b6
+                            </th>
+                            <th>
+                                Total
+                            </th>
+                        </tr>
+                    </thead>
+                       <tr>
+                           <td> Player 1 </td>
+                           <td id ="61">
+   
+                           </td>
+                           <td id = "62">
+   
+                           </td>
+                           <td id = "63">
+   
+                           </td>
+                           <td id ="64">
+   
+                           </td>
+                           <td id = "65">
+   
+                           </td>
+                           <td id = "66">
+   
+                           </td>
+                           <td id="511"></td>
+   
+                       <tr>
+                        <td> Player 2 </td>
+                           <td id ="67">
+   
+                           </td>
+                           <td id = "68">
+   
+                           </td>
+                           <td id = "69">
+   
+                           </td>
+                           <td id ="70">
+   
+                           </td>
+                           <td id = "71">
+   
+                           </td>
+                           <td id = "72">
+   
+                           </td>
+                           <td id="512"></td>
+                       </tr>
+   
+                       <tr>
+                        <td> Player 3 </td>
+                           <td id ="73">
+   
+                           </td>
+                           <td id = "74">
+   
+                           </td>
+                           <td id = "75">
+   
+                           </td>
+                           <td id ="76">
+   
+                           </td>
+                           <td id = "77">
+   
+                           </td>
+                           <td id = "78"> </td>
+                           <td id="513"></td>
+   
+                       </tr>
+   
+                       <tr>
+                        <td> Player 4 </td>
+                           <td id ="79">
+   
+                           </td>
+                           <td id = "80">
+   
+                           </td>
+                           <td id = "81">
+   
+                           </td>
+                           <td id ="82">
+   
+                           </td>
+                           <td id = "83">
+   
+                           </td>
+                           <td id = "84"></td>
+                           <td id="514"></td>
+   
+                       </tr>
+                       <tr>
+                        <td> Player 5 </td>
+                           <td id ="85">
+   
+                           </td>
+                           <td id = "86">
+   
+                           </td>
+                           <td id = "87">
+   
+                           </td>
+                           <td id ="88">
+   
+                           </td>
+                           <td id = "89">
+   
+                           </td>
+                           <td id = "90"></td>
+                           <td id="515"></td>
+   
+                       </tr>
+                       <tr>
+                        <td> Player 6 </td>
+                        <td id ="91">
+
+                        </td>
+                        <td id = "92">
+
+                        </td>
+                        <td id = "93">
+
+                        </td>
+                        <td id ="94">
+
+                        </td>
+                        <td id = "95">
+
+                        </td>
+                        <td id = "96">
+
+                        </td>
+                        <td id="516"></td>
+
+                    <tr>
+                     <td> Player 7 </td>
+                        <td id ="97">
+
+                        </td>
+                        <td id = "98">
+
+                        </td>
+                        <td id = "99">
+
+                        </td>
+                        <td id ="100">
+
+                        </td>
+                        <td id = "101">
+
+                        </td>
+                        <td id = "102">
+
+                        </td>
+                        <td id="517"></td>
+                    </tr>
+
+                    <tr>
+                     <td> Player 8 </td>
+                        <td id ="103">
+
+                        </td>
+                        <td id = "104">
+
+                        </td>
+                        <td id = "105">
+
+                        </td>
+                        <td id ="106">
+
+                        </td>
+                        <td id = "107">
+
+                        </td>
+                        <td id = "108"> </td>
+                        <td id="518"></td>
+
+                    </tr>
+
+                    <tr>
+                     <td> Player 9 </td>
+                        <td id ="109">
+
+                        </td>
+                        <td id = "110">
+
+                        </td>
+                        <td id = "111">
+
+                        </td>
+                        <td id ="112">
+
+                        </td>
+                        <td id = "113">
+
+                        </td>
+                        <td id = "114"></td>
+                        <td id="519"></td>
+
+                    </tr>
+                    <tr>
+                     <td> Player 10 </td>
+                        <td id ="115">
+
+                        </td>
+                        <td id = "116">
+
+                        </td>
+                        <td id = "117">
+
+                        </td>
+                        <td id ="118">
+
+                        </td>
+                        <td id = "119">
+
+                        </td>
+                        <td id = "120"></td>
+                        <td id="520"></td>
+
+                    </tr>
+   
+   
+                   </table>
+        </div>
+    </div>
+
+</body>
+</html>

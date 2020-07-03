@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .column5 {
+    float: left;
+    width: 30%;
+    padding: 5px;   
+  
+  }
+
+  table, tr, td{
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+
+  }
+ td{
+   width: 20px;
+ }
+
+ h1{
+   text-align: center;
+ }
+ #res
+ {
+   text-align: center;
+   margin-left: auto;
+ }
+ 

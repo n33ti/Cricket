@@ -23,6 +23,7 @@ var myFunction = function () {
                 undisbtn2()
                 timer = 0;
                 ball = 60;
+                nextRow = 511;
             }
             else {
                 showRes()

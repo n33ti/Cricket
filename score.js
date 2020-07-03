@@ -20,6 +20,7 @@ var myFunction = function () {
         if (timer === 60) {
             if (ball <= 60) {
                 disbtn1()
+                undisbtn2()
                 timer = 0;
             }
             else {

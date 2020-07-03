@@ -23,14 +23,15 @@ const myFunction =function ()
         if (timer === 60) {
             if(ball <=60)
             {
-           //disbtn1()
+           disbtn1()
+           undistbtn2()
             timer = 0;
             }
             else{
-                //showRes()
+            showRes()
                 show1 = false;
-                //disbtn2()
-                //check()
+                disbtn2()
+            
             timer = 0;
             clearInterval(myvar);
             }
@@ -43,7 +44,7 @@ const updateTotalscore = function()
     if(scoreRow>maxScore)
     {
         maxScore = scoreRow
-        player = "Player " +  (ball%6 + 1).toString()
+        player = "Player " +  (ball/6 + 1).toString()
     }
     document.getElementById(nextRow.toString()).innerHTML = scoreRow.toString()
     scoreRow = 0;
@@ -74,7 +75,7 @@ const setScore = function(id)
        ball--
        totalScore = 0
        timer = 0
-       //check();
+       check();
        return;
     }
     if(ball>120)
@@ -83,8 +84,8 @@ const setScore = function(id)
         totalScore = 0;
         scoreRow = 0
         clearInterval(myvar);
-        //check()
-        //showRes()
+        check()
+        showRes()
         
     return
     }

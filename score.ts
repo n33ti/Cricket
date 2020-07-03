@@ -62,8 +62,13 @@ const generateResults = function()
  res = "Team B"
  else
  res = "None"
+ var team
+ if(ball>60)
+  team = "Team B"
+  else
+  team = "Team A"
  document.getElementById("Results").innerHTML = "Match Won By " + res;
- document.getElementById("Man").innerHTML = "Man of the Match : " + player + "\nScore : " + maxScore.toString(); 
+ document.getElementById("Man").innerHTML = "Man of the Match : " + player + "\nScore : " + maxScore.toString() + " of " + team; 
 }
 const setScore = function(id)
 {
